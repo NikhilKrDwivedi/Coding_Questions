@@ -1,0 +1,18 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int fact(int n)
+{
+    if(n<=0)
+    {
+        return 1;
+    }
+    return n*fact(n-1);
+}
+int main()
+{
+    int number;
+    cout<<"enter number to check factorial"<<endl;
+    cin>>number;
+    cout<<"factoial of "<<number<<" is "<<fact(number);
+}
